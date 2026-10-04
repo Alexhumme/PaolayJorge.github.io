@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerlis &amp; Jorge — Generar invitación</title>
+  <meta name="description" content="Genera el link personalizado de invitación a la boda de Kerlis y Jorge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="./assets/img/jk-logo.png" type="image/png-icon">
+</head>
+<body>
+
+  <main class="pagina-invitador">
+    <img class="overlay-flor sup-izq" src="assets/img/flor1.png" alt="" aria-hidden="true">
+    <img class="overlay-flor inf-der" src="assets/img/flor2.png" alt="" aria-hidden="true">
+
+    <section class="invitador-tarjeta reveal visible">
+      <p class="etiqueta">Kerlis &amp; Jorge · 14 de Noviembre de 2026</p>
+      <h1 class="titulo-script" style="margin-top:18px;">Invita a tus invitados</h1>
+      <p class="invitador-sub">Escribe los datos de tu invitado y genera un link personalizado con su nombre, mesa y cupos.</p>
+
+      <form class="invitador-form" id="form-invitador" novalidate>
+        <div class="campo">
+          <label for="campo-nombre">Nombre del invitado</label>
+          <input type="text" id="campo-nombre" placeholder="Ej: Familia Rodríguez" autocomplete="off" required>
+        </div>
+        <div class="campo-doble">
+          <div class="campo">
+            <label for="campo-cupos">Cupos</label>
+            <input type="number" id="campo-cupos" min="1" max="20" placeholder="Ej: 4" autocomplete="off">
+          </div>
+          <div class="campo">
+            <label for="campo-mesa">Mesa</label>
+            <input type="text" id="campo-mesa" placeholder="Ej: Mesa 3" autocomplete="off">
+          </div>
+        </div>
+        <button type="submit" class="boton">Generar link de invitación</button>
+      </form>
+
+      <div class="link-generado" id="link-generado">
+        <p class="etiqueta">Link personalizado</p>
+        <div class="link-caja">
+          <input type="text" id="input-link" readonly aria-label="Link de invitación generado">
+          <button type="button" class="boton" id="boton-copiar">Copiar</button>
+        </div>
+        <p class="link-nota">Comparte este link con tu invitado. Al abrirlo verá la invitación con sus datos.</p>
+        <p class="copiado-aviso" id="copiado-aviso">¡Link copiado!</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

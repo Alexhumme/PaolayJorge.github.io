@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60">
+  <defs>
+    <linearGradient id="hojaR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9a961"/>
+      <stop offset="1" stop-color="#a8823d"/>
+    </linearGradient>
+    <linearGradient id="hojaRV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7d8a4a"/>
+      <stop offset="1" stop-color="#5f6d38"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 32 C70 18 150 18 230 30" fill="none" stroke="#a8823d" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M50 26 C70 12 95 8 115 12 C100 22 72 28 50 26 Z" fill="url(#hojaRV)"/>
+  <path d="M120 20 C140 6 170 4 192 10 C172 20 142 24 120 20 Z" fill="url(#hojaR)"/>
+  <path d="M95 24 C110 30 125 34 138 38 C122 40 106 34 95 24 Z" fill="url(#hojaR)" opacity="0.85"/>
+  <path d="M160 22 C172 28 182 32 190 36 C178 38 166 32 160 22 Z" fill="url(#hojaRV)" opacity="0.85"/>
+</svg>
