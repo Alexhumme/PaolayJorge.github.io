@@ -8,7 +8,7 @@
 const CONFIG = {
   nombres: 'Kerlis & Jorge',
   // Fecha y hora de la ceremonia (hora local de Colombia, -05:00)
-  fechaBoda: '2026-11-14T16:00:00-05:00',
+  fechaBoda: '2026-11-14T18:30:00-05:00',
   // Fecha límite para confirmar asistencia
   fechaLimite: '14 de octubre de 2026',
   // Hashtag de Instagram del matrimonio
@@ -20,22 +20,22 @@ const CONFIG = {
   lugares: [
     {
       tipo: 'Ceremonia',
-      nombre: 'Iglesia de la Inmaculada Concepción',
-      direccion: 'Cra. 7 # 45-30, Bogotá D.C., Colombia',
-      maps: 'https://www.google.com/maps/search/?api=1&query=Iglesia+de+la+Inmaculada+Concepci%C3%B3n+Bogot%C3%A1',
+      nombre: 'Catedral Nuestra Señora de los Remedios',
+      direccion: 'Cl. 2 #7 - 13, Riohacha, La Guajira',
+      maps: 'https://maps.app.goo.gl/pNhY4opimi4MYQLp8',
       icono: 'assets/svg/icono-iglesia.svg'
     },
     {
       tipo: 'Recepción',
-      nombre: 'Salón Hacienda San Rafael',
-      direccion: 'Km 21 Vía La Calera, Bogotá D.C., Colombia',
-      maps: 'https://www.google.com/maps/search/?api=1&query=Hacienda+San+Rafael+La+Calera',
+      nombre: 'Club Castillo Real',
+      direccion: 'Carrera 7 No 28A-30',
+      maps: 'https://maps.app.goo.gl/sWdsRMRwLgcmCKdYA',
       icono: 'assets/svg/icono-campana.svg'
     }
   ],
   // Itinerario: hora, título, nota
   itinerario: [
-    { hora: '4:00 PM', titulo: 'Ceremonia', nota: 'Iglesia de la Inmaculada Concepción', icono: 'assets/svg/icono-iglesia.svg' },
+    { hora: '6:30 PM', titulo: 'Ceremonia', nota: 'Catedral Nuestra Señora de los Remedios', icono: 'assets/svg/icono-iglesia.svg' },
     { hora: '5:00 PM', titulo: 'Recepción', nota: 'Acompáñanos a dar el primer brindis', icono: 'assets/svg/icono-campana.svg' },
     { hora: '5:30 PM', titulo: 'Photocal', nota: 'Capturamos juntos los primeros recuerdos', icono: 'assets/svg/icono-camara.svg' },
     { hora: '6:00 PM', titulo: 'Aperitivos', nota: 'Cóctel y música en vivo', icono: 'assets/svg/icono-copa.svg' },
