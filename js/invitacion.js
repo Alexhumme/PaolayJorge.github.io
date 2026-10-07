@@ -6,13 +6,13 @@
    CONFIGURACIÓN — edita estos datos para personalizar
 ------------------------------------------------------------ */
 const CONFIG = {
-  nombres: 'Kerlis & Jorge',
+  nombres: 'Jorge & Kerlis',
   // Fecha y hora de la ceremonia (hora local de Colombia, -05:00)
   fechaBoda: '2026-11-14T18:30:00-05:00',
   // Fecha límite para confirmar asistencia
   fechaLimite: '14 de octubre de 2026',
   // Hashtag de Instagram del matrimonio
-  hashtag: '#KerlisYJorge',
+  hashtag: '#JorgeYKerlis',
   // URLs de Google Forms (reemplaza con las tuyas)
   urlConfirmacion: 'https://docs.google.com/forms/d/e/1FAIpQLSe121pnEn1vJWi0Ts1Ufnj2gvvxPbE92F7mqGyVFumj3IGdlA/viewform?usp=header',
   urlMusica: 'https://docs.google.com/forms/d/e/1FAIpQLSe98DkMtf68TkztYTLjsrTZmW3LfXGm_2aeDq09kkfAtJ0yzw/viewform?usp=publish-editor',
@@ -38,11 +38,11 @@ const CONFIG = {
     { hora: '6:30 PM', titulo: 'Llegada del novio', nota: 'Acompáñanos a recibir al novio en la Catedral', icono: 'assets/svg/icono-anillos.svg' },
     { hora: '7:00 PM', titulo: 'Ceremonia', nota: 'Catedral Nuestra Señora de los Remedios', icono: 'assets/svg/icono-iglesia.svg' },
     { hora: '8:30 PM', titulo: 'Cóctel de bienvenida', nota: 'Ubicación y recepción en el Club Castillo Real', icono: 'assets/svg/icono-copa.svg' },
-    { hora: '8:50 PM', titulo: 'Llegada de los novios', nota: 'Recibamos a Kerlis y Jorge con una lluvia de amor', icono: 'assets/svg/icono-corazon.svg' },
+    { hora: '8:50 PM', titulo: 'Llegada de los novios', nota: 'Recibamos a Jorge y Kerlis con una lluvia de amor', icono: 'assets/svg/icono-corazon.svg' },
     { hora: '9:00 PM', titulo: 'Brindis y palabras', nota: 'Brindis y palabras especiales de los familiares', icono: 'assets/svg/icono-campana.svg' },
     { hora: '9:10 PM', titulo: 'Baile de los novios', nota: 'El primer baile como esposos', icono: 'assets/svg/icono-musica.svg' },
     { hora: '9:15 PM', titulo: 'Ramo', nota: 'Lanzamiento del ramo de flores', icono: 'assets/svg/icono-ramo.svg' },
-    { hora: '9:25 PM', titulo: 'Capitanes', nota: 'Brindis de los capitanes de la fiesta', icono: 'assets/svg/icono-copas.svg' },
+    { hora: '9:25 PM', titulo: 'Capitanes de mesa', nota: 'Llegan los capitanes aprender la fiesta', icono: 'assets/svg/icono-copas.svg' },
     { hora: '9:50 PM', titulo: 'Buen provecho', nota: 'A disfrutar de la cena', icono: 'assets/svg/icono-comida.svg' },
     { hora: '10:00 PM', titulo: 'Mesa de dulces', nota: 'Dulces y antojos para todos', icono: 'assets/svg/icono-pastel.svg' },
     { hora: '11:00 PM', titulo: '¡A divertirse!', nota: 'Que empiece la diversión', icono: 'assets/svg/icono-musica.svg' },
@@ -338,8 +338,8 @@ function generarPdf() {
       const img = canvas.toDataURL('image/jpeg', 0.92);
       pdf.addImage(img, 'JPEG', 0, 0, ancho, alto);
       const nombreArchivo = nombreFormateado
-        ? `Invitacion-KerlisYJorge-${nombreFormateado.replace(/\s+/g, '-')}.pdf`
-        : 'Invitacion-KerlisYJorge.pdf';
+        ? `Invitacion-JorgeYKerlis-${nombreFormateado.replace(/\s+/g, '-')}.pdf`
+        : 'Invitacion-JorgeYKerlis.pdf';
       pdf.save(nombreArchivo);
     })
     .catch(() => {
