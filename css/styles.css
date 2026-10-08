@@ -1138,8 +1138,8 @@ img { max-width: 100%; display: block; }
 .pdf-flor.id { bottom: 8px; right: 8px; }
 .pdf-titulo { font-family: var(--font-script); font-size: 64px; color: var(--burdeos); line-height: 1.1; }
 .pdf-fecha { margin-top: 6px; font-family: var(--font-sans); letter-spacing: 5px; font-size: 14px; text-transform: uppercase; color: var(--dorado); }
-.pdf-ramita { width: 190px; margin: 14px auto 0; }
-.pdf-para { margin-top: 26px; font-style: italic; font-size: 23px; color: var(--tinta-suave); }
+.pdf-ramita { width: 190px; margin: 0; }
+.pdf-para { margin-top:0; font-style: italic; font-size: 23px; color: var(--tinta-suave); }
 .pdf-nombre { font-family: var(--font-script); font-size: 58px; color: var(--burdeos); margin-top: 4px; word-break: break-word; }
 .pdf-detalles { margin-top: 8px; font-family: var(--font-sans); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--dorado); }
 .pdf-divisor { width: 70%; margin: 26px auto; height: 1px; background: linear-gradient(90deg, transparent, var(--dorado), transparent); }
