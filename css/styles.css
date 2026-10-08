@@ -874,7 +874,77 @@ img { max-width: 100%; display: block; }
 .compartir-flor.id { bottom: 12px; right: -30px; }
 
 /* ============================================================
-   10. CONFIRMAR ASISTENCIA
+   10. LLUVIA DE SOBRES
+================================================================= */
+.seccion-sobres { text-align: center; }
+.sobre-contenido {
+  max-width: 520px;
+  margin: 36px auto 0;
+}
+.sobre-texto {
+  font-size: clamp(19px, 2.6vw, 24px);
+  font-style: italic;
+  color: var(--tinta);
+  line-height: 1.65;
+}
+.sobre-qr-marco {
+  margin: 34px auto 0;
+  width: min(240px, 60vw);
+  background: var(--blanco);
+  border: 1.5px solid var(--dorado);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 16px 40px rgba(74, 52, 40, 0.12);
+  position: relative;
+}
+.sobre-qr-marco::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(184, 147, 61, 0.35);
+  border-radius: 12px;
+  pointer-events: none;
+}
+.sobre-qr {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.sobre-llave {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.sobre-llave-label {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dorado);
+}
+.sobre-llave-valor {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 600;
+  color: var(--burdeos);
+  background: var(--crema);
+  border: 1.5px solid var(--dorado-suave);
+  border-radius: 12px;
+  padding: 10px 24px;
+  letter-spacing: 1px;
+}
+.sobre-nota {
+  margin-top: 14px;
+  font-style: italic;
+  font-size: 16.5px;
+  color: var(--tinta-suave);
+}
+
+/* ============================================================
+   11. CONFIRMAR ASISTENCIA
 ================================================================= */
 .seccion-confirmacion { text-align: center; }
 .confirmacion-texto {
