@@ -1124,35 +1124,35 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-serif);
 }
 .pdf-marco {
-  margin: 26px;
+  margin: 20px;
   border: 2px solid var(--dorado);
   outline: 1px solid var(--dorado-suave);
   outline-offset: 5px;
-  padding: 54px 48px 44px;
+  padding: 40px 44px 34px;
   text-align: center;
   position: relative;
   background: linear-gradient(170deg, #fffdf8, var(--crema));
 }
-.pdf-flor { position: absolute; width: 130px; }
-.pdf-flor.si { top: 8px; left: 8px; }
-.pdf-flor.id { bottom: 8px; right: 8px; }
-.pdf-titulo { font-family: var(--font-script); font-size: 64px; color: var(--burdeos); line-height: 1.1; }
-.pdf-fecha { margin-top: 6px; font-family: var(--font-sans); letter-spacing: 5px; font-size: 14px; text-transform: uppercase; color: var(--dorado); }
-.pdf-ramita { width: 190px; margin: 0; }
-.pdf-para { margin-top:0; font-style: italic; font-size: 23px; color: var(--tinta-suave); }
-.pdf-nombre { font-family: var(--font-script); font-size: 58px; color: var(--burdeos); margin-top: 4px; word-break: break-word; }
-.pdf-detalles { margin-top: 8px; font-family: var(--font-sans); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--dorado); }
-.pdf-divisor { width: 70%; margin: 26px auto; height: 1px; background: linear-gradient(90deg, transparent, var(--dorado), transparent); }
-.pdf-sub { font-family: var(--font-script); font-size: 36px; color: var(--burdeos); }
-.pdf-linea { display: flex; justify-content: space-between; gap: 18px; margin-top: 12px; font-size: 18.5px; }
-.pdf-linea .hora { font-family: var(--font-sans); font-size: 14px; letter-spacing: 2px; color: var(--dorado); min-width: 92px; text-align: left; padding-top: 3px; }
+.pdf-flor { position: absolute; width: 100px; }
+.pdf-flor.si { top: 6px; left: 6px; }
+.pdf-flor.id { bottom: 6px; right: 6px; }
+.pdf-titulo { font-family: var(--font-script); font-size: 58px; color: var(--burdeos); line-height: 1.1; }
+.pdf-fecha { margin-top: 4px; font-family: var(--font-sans); letter-spacing: 5px; font-size: 13px; text-transform: uppercase; color: var(--dorado); }
+.pdf-ramita { width: 150px; margin: 10px auto 0; }
+.pdf-para { margin-top: 16px; font-style: italic; font-size: 20px; color: var(--tinta-suave); }
+.pdf-nombre { font-family: var(--font-script); font-size: 50px; color: var(--burdeos); margin-top: 4px; word-break: break-word; }
+.pdf-detalles { margin-top: 6px; font-family: var(--font-sans); font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--dorado); }
+.pdf-divisor { width: 70%; margin: 16px auto; height: 1px; background: linear-gradient(90deg, transparent, var(--dorado), transparent); }
+.pdf-sub { font-family: var(--font-script); font-size: 32px; color: var(--burdeos); }
+.pdf-linea { display: flex; justify-content: space-between; gap: 14px; margin-top: 8px; font-size: 16px; line-height: 1.35; }
+.pdf-linea .hora { font-family: var(--font-sans); font-size: 12px; letter-spacing: 1.5px; color: var(--dorado); min-width: 68px; text-align: left; padding-top: 2px; }
 .pdf-linea .dato { text-align: left; font-style: italic; color: var(--tinta); }
-.pdf-hashtag { margin-top: 26px; font-family: var(--font-sans); font-size: 14px; letter-spacing: 3px; color: var(--burdeos); }
-.pdf-nota { margin-top: 10px; font-size: 15.5px; font-style: italic; color: var(--tinta-suave); }
-.pdf-direccion { margin-top: 10px; font-size: 16.5px; line-height: 1.5; }
-.pdf-dir-tipo { font-family: var(--font-sans); font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase; color: var(--dorado); }
+.pdf-hashtag { margin-top: 16px; font-family: var(--font-sans); font-size: 13px; letter-spacing: 2.5px; color: var(--burdeos); }
+.pdf-nota { margin-top: 6px; font-size: 14px; font-style: italic; color: var(--tinta-suave); }
+.pdf-direccion { margin-top: 8px; font-size: 15px; line-height: 1.4; }
+.pdf-dir-tipo { font-family: var(--font-sans); font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--dorado); }
 .pdf-dir-nombre { font-style: italic; color: var(--burdeos); font-weight: 600; }
-.pdf-dir-dir { color: var(--tinta-suave); font-size: 15px; }
+.pdf-dir-dir { color: var(--tinta-suave); font-size: 13.5px; }
 
 /* ============================================================
    MEDIA QUERIES — MÓVIL
