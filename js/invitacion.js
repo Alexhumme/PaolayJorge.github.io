@@ -59,7 +59,7 @@ function poblarItinerario() {
   const pdfLista = document.getElementById('pdf-itinerario');
   if (!lista) return;
 
-  lista.innerHTML = CONFIG.itinerario.map((item, i) => `
+  lista.innerHTML = itinerarioMostrar.map((item, i) => `
     <div class="itinerario-item reveal" style="--reveal-delay:${0.1 + i * 0.08}s">
       <div class="itinerario-icono"><img src="${item.icono}" alt="" aria-hidden="true"></div>
       <p class="itinerario-hora">${item.hora}</p>
@@ -69,7 +69,7 @@ function poblarItinerario() {
   `).join('');
 
   if (pdfLista) {
-    pdfLista.innerHTML = CONFIG.itinerario.map(item => `
+    pdfLista.innerHTML = itinerarioMostrar.map(item => `
       <div class="pdf-linea">
         <span class="hora">${item.hora}</span>
         <span class="dato"><strong>${item.titulo}</strong> — ${item.nota}</span>
@@ -120,12 +120,24 @@ const params = new URLSearchParams(window.location.search);
 const invitado = {
   nombre: (params.get('nombre') || '').trim(),
   cupos: (params.get('cupos') || '').trim(),
-  mesa: (params.get('mesa') || '').trim()
+  mesa: (params.get('mesa') || '').trim(),
+  participante: params.get('participante') === 'true'
 };
+
+// Para participantes: solo itinerario hasta la ceremonia (llegada del novio + ceremonia)
+const itinerarioMostrar = invitado.participante
+  ? CONFIG.itinerario.slice(0, 2)
+  : CONFIG.itinerario;
 
 const nombreFormateado = invitado.nombre
   ? invitado.nombre.replace(/\s+/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
   : '';
+
+// Badge de tarjeta de participar
+if (invitado.participante) {
+  const badge = document.getElementById('participante-badge');
+  if (badge) badge.style.display = 'inline-block';
+}
 
 /* ------------------------------------------------------------
    Overlay del sobre

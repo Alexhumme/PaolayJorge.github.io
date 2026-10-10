@@ -25,6 +25,7 @@ form.addEventListener('submit', (e) => {
   query.set('nombre', nombre);
   if (cupos) query.set('cupos', cupos);
   if (mesa) query.set('mesa', mesa);
+  if (document.getElementById('campo-participante').checked) query.set('participante', 'true');
 
   const url = `${base}?${query.toString()}`;
   inputLink.value = url;

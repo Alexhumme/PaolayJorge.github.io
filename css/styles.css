@@ -529,6 +529,19 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    5. ITINERARIO
 ================================================================= */
+.participante-badge {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--dorado);
+  border: 1.5px solid var(--dorado-suave);
+  border-radius: 999px;
+  padding: 8px 22px;
+  background: var(--blanco);
+}
 .seccion-itinerario { text-align: center; }
 
 .itinerario-lista {
@@ -874,7 +887,39 @@ img { max-width: 100%; display: block; }
 .compartir-flor.id { bottom: 12px; right: -30px; }
 
 /* ============================================================
-   10. LLUVIA DE SOBRES
+   10. Y A LOS NIÑOS
+================================================================= */
+.seccion-ninos { text-align: center; }
+.ninos-icono {
+  width: 130px;
+  margin: 22px auto 0;
+  display: block;
+}
+.ninos-texto {
+  margin-top: 30px;
+  font-size: clamp(22px, 3.4vw, 30px);
+  font-style: italic;
+  color: var(--tinta);
+  line-height: 1.6;
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+}
+.ninos-texto::before,
+.ninos-texto::after {
+  content: '"';
+  font-family: var(--font-script);
+  font-size: 60px;
+  color: var(--dorado);
+  opacity: 0.5;
+  position: absolute;
+  top: -18px;
+}
+.ninos-texto::before { left: -8px; }
+.ninos-texto::after { right: -8px; }
+
+/* ============================================================
+   11. LLUVIA DE SOBRES
 ================================================================= */
 .seccion-sobres { text-align: center; }
 .sobre-contenido {
@@ -1069,6 +1114,35 @@ img { max-width: 100%; display: block; }
 }
 .campo-doble { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 @media (max-width: 480px) { .campo-doble { grid-template-columns: 1fr; } }
+
+.campo-check { margin-top: 4px; }
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.check-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--burdeos);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.check-texto {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+.check-nota {
+  font-size: 11px;
+  color: var(--tinta-suave);
+  letter-spacing: 1px;
+  text-transform: none;
+}
 
 .link-generado {
   margin-top: 30px;
