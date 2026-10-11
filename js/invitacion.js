@@ -97,7 +97,12 @@ function poblarDirecciones() {
   const contenedor = document.getElementById('direcciones-contenedor');
   if (!contenedor) return;
 
-  contenedor.innerHTML = CONFIG.lugares.map((lugar, i) => `
+  // En la tarjeta de participar solo se muestra la dirección de la ceremonia
+  const lugaresMostrar = invitado.participante
+    ? CONFIG.lugares.filter(lugar => lugar.tipo === 'Ceremonia')
+    : CONFIG.lugares;
+
+  contenedor.innerHTML = lugaresMostrar.map((lugar, i) => `
     <article class="tarjeta-lugar reveal" style="--reveal-delay:${0.1 + i * 0.15}s">
       <div class="lugar-ilustracion"><img src="${lugar.icono}" alt="" aria-hidden="true"></div>
       <p class="lugar-tipo">${lugar.tipo}</p>
@@ -138,7 +143,6 @@ const nombreFormateado = invitado.nombre
 if (invitado.participante) {
   const ocultar = [
     '.seccion-itinerario',
-    '.seccion-direcciones',
     '.musica-bloque',
     '.seccion-compartir',
     '.seccion-confirmacion'
