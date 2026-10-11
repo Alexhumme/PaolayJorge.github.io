@@ -133,10 +133,20 @@ const nombreFormateado = invitado.nombre
   ? invitado.nombre.replace(/\s+/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
   : '';
 
-// Badge de tarjeta de participar
+// En la tarjeta de participar se ocultan varias secciones.
+// El invitado NO debe saber que su tarjeta es reducida: sin badge, sin pistas.
 if (invitado.participante) {
-  const badge = document.getElementById('participante-badge');
-  if (badge) badge.style.display = 'inline-block';
+  const ocultar = [
+    '.seccion-itinerario',
+    '.seccion-direcciones',
+    '.musica-bloque',
+    '.seccion-compartir',
+    '.seccion-confirmacion'
+  ];
+  ocultar.forEach(selector => {
+    const el = document.querySelector(selector);
+    if (el) el.style.display = 'none';
+  });
 }
 
 /* ------------------------------------------------------------
