@@ -10,7 +10,7 @@ const CONFIG = {
   // Fecha y hora de la ceremonia (hora local de Colombia, -05:00)
   fechaBoda: '2026-11-14T18:30:00-05:00',
   // Fecha límite para confirmar asistencia
-  fechaLimite: '14 de octubre de 2026',
+  fechaLimite: '10 de noviembre de 2026',
   // Hashtag de Instagram del matrimonio
   hashtag: '#JorgeYKerlis',
   // URLs de Google Forms (reemplaza con las tuyas)
